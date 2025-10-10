@@ -95,7 +95,8 @@ const defaultSettings = {
 	"ignoreChaptersClick": true,
 	"hideTicketShelf": true,
 	"hideAISummary": true,
-	"hideEndScreen": false
+	"hideEndScreen": false,
+	"hideExtraSearchCategories": true
 };
 
 initiate();
@@ -484,7 +485,7 @@ function addCustomStyles() {
 		#video-title.ytd-compact-video-renderer:hover {
 			color: #167ac6;
 		}
-		.ytp-chrome-controls {
+		#movie_player:not(.ytp-delhi-modern) .ytp-chrome-controls {
 			height: 40px !important;
 			line-height: 40px !important;
 		}
@@ -1123,6 +1124,7 @@ function addCustomStyles() {
 			padding-right: 0px;
 			border: none;
 			justify-content: space-between;
+			width: auto;
 		}
 		#primary-inner ytd-watch-metadata #avatar {
 			width: 48px;
@@ -1157,6 +1159,9 @@ function addCustomStyles() {
 			font-size: 1.8rem !important;
 			transform: translateY(27px);
 			color: var(--redux-spec-text-secondary);
+		}
+		[is-theater-mode] #redux-video-stats {
+			transform: translateY(26px);
 		}
 		#redux-views-count {
 			font-size: 1.8rem !important;
@@ -2770,6 +2775,7 @@ function addCustomStyles() {
 		hideShorts: `
 		#endpoint[title="Shorts"],
 		ytd-search ytd-reel-shelf-renderer,
+		ytd-two-column-search-results-renderer grid-shelf-view-model,
 		#related ytd-reel-shelf-renderer,
 		[slot="extra-content"] ytd-reel-shelf-renderer {
 			display: none !important;
@@ -2803,7 +2809,8 @@ function addCustomStyles() {
 		hideHomeChannelAvatars: `
 		#avatar-link.ytd-rich-grid-media,
 		#details.ytd-rich-grid-media > #avatar-container,
-		[page-subtype="home"] .yt-lockup-metadata-view-model-wiz__avatar {
+		[page-subtype="home"] .yt-lockup-metadata-view-model-wiz__avatar,
+		[page-subtype="home"] .yt-lockup-metadata-view-model__avatar {
 			display: none !important;
 		}
 		`,
@@ -2848,6 +2855,11 @@ function addCustomStyles() {
 		`,
 		hideEndScreen: `
 		#ytd-player .ytp-ce-element {
+			display: none !important;
+		}
+		`,
+		hideExtraSearchCategories: `
+		ytd-two-column-search-results-renderer ytd-shelf-renderer {
 			display: none !important;
 		}
 		`

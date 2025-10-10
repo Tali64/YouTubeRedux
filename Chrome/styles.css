@@ -478,7 +478,8 @@ ytd-watch-metadata #above-the-fold #owner {
 /*SEARCH RESULTS STYLES*/
 ytd-item-section-renderer ytd-thumbnail:not([rich-grid-thumbnail]), 
 ytd-item-section-renderer ytd-playlist-thumbnail,
-ytd-item-section-renderer .yt-lockup-view-model-wiz__content-image {
+ytd-item-section-renderer .yt-lockup-view-model-wiz__content-image,
+ytd-two-column-search-results-renderer .yt-lockup-view-model__content-image {
     max-width: 246px !important;
 }
 ytd-item-section-renderer yt-lockup-view-model > div {
