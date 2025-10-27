@@ -405,6 +405,25 @@
             margin-top: 2px;
             opacity: 0.5;
         }
+        .donate-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .donate-text-wrapper {
+            display: flex;
+            position: absolute;
+            transition-duration: 0.5s;
+            gap: 0px;
+            font-size: 150%;
+            font-weight: bold;
+            opacity: 0;
+            white-space: nowrap;
+        }
+        .donate-wrapper:hover .donate-text-wrapper {
+            gap: 200px;
+            opacity: 1;
+        }
       </style>
     </head>
     <body>
@@ -466,6 +485,7 @@
                             <label><input type="checkbox" name="classicLikesIconColors" class="settings">Use green/red colors for likes/dislikes buttons</label>
                             <label><input type="checkbox" name="classicLikesStyle" class="settings">Use old icons for likes/dislikes</label>
                             <label><input type="checkbox" name="darkPlaylist" class="settings">Use dark theme for playlists</label>
+                            <label><input type="checkbox" name="immersiveFullscreen" class="settings">Immersive fullscreen mode<div class="tooltip"><span class="tooltip-text-small">While in fullscreen mode hides everything besides the exit button.</span></div></label>
                             <label><input type="checkbox" name="trueFullscreen" class="settings">True fullscreen mode<div class="tooltip"><span class="tooltip-text-small">Prevents scrolling while in fullscreen mode.</span></div></label>
                             <label><input type="checkbox" name="subBorder" class="settings">Add border around subscribers count</label>
                             <label><input type="checkbox" name="trimSubs" class="settings">Trim subscribers count<div class="tooltip"><span class="tooltip-text-small">Trims the subscribers count text so that it only contains the number. May not be compatible with all languages.</span></div></label>
@@ -639,7 +659,13 @@
             <div id="left-arrow" class="nav-arrow" style="transform: rotate(180deg)" disabled>
                 <svg height="48" viewBox="0 0 48 48" width="48"><path d="M16 10v28l22-14z"/></svg>
             </div>
-            <button id="donate"><img src="/images/donate.png" alt="Donation button"></img></button>
+            <div class="donate-wrapper">
+                <div class="donate-text-wrapper">
+                    <span>❤️ YOU'RE</span>
+                    <span>AWESOME ❤️</span>
+                </div>
+                <button id="donate"><img src="/images/donate.png" alt="Donation button"></img></button>
+            </div>
             <div id="right-arrow" class="nav-arrow">
                 <svg height="48" viewBox="0 0 48 48" width="48"><path d="M16 10v28l22-14z"/></svg>
             </div>
