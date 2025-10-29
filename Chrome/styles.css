@@ -342,7 +342,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     display: none !important;
 }
 .ytp-delhi-modern .ytp-gradient-bottom {
-    display: block;
+    display: block !important;
     background-repeat: repeat-x;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==");
 }
@@ -647,6 +647,12 @@ ytd-two-column-search-results-renderer tp-yt-paper-button.ytd-subscribe-button-r
     margin-right: 15px !important;
 }
 
+.ytSuggestionComponentRoundedSuggestion {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	height: 32px !important;
+}
+
 /*CHANNEL STYLES*/
 html:not([dark]) #video-title.ytd-grid-playlist-renderer {
     color:#167ac6 !important;
@@ -719,6 +725,34 @@ yt-img-shadow.ytd-mini-channel-renderer {
     cursor: pointer;
     background-color: var(--redux-spec-badge-chip-background-hover);
 }
+#contentContainer.tp-yt-app-header {
+	max-width: 1070px !important;
+	margin: auto;
+}
+#page-header-banner {
+	padding: 0 !important;
+}
+.tabGroupShapeSlider {
+	background: #ff0000 !important;
+	height: 3px !important;
+}
+tp-yt-app-toolbar.ytd-tabbed-page-header, #tabs-container.ytd-tabbed-page-header, tp-yt-paper-tabs.ytd-tabbed-page-header, [page-subtype="channels"] #tabsContainer, .tabGroupShapeHost, .yt-tab-shape {
+	height: 35px !important;
+}
+.yt-tab-shape__tab {
+	font-size: 13px !important;
+	font-weight: 400 !important;
+}
+.yt-tab-shape__tab--tab-selected {
+	font-weight: 500 !important;
+}
+.yt-tab-shape:hover .yt-tab-shape__tab-bar {
+	background: #ff0000 !important;
+	height: 3px !important;
+}
+yt-dynamic-text-view-model .dynamicTextViewModelH1 {
+	font-size: 20px !important;
+}
     
 /*FEED STYLES*/
 yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {
@@ -727,6 +761,9 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {
 }
 #contents.ytd-channel-list-sub-menu-renderer {
     max-width:300px !important;
+}
+.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
+	background: #ff0000;
 }
 
 /*ADDITIONAL*/
