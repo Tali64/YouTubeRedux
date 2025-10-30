@@ -133,6 +133,23 @@ ytd-guide-entry-renderer[is-header] .title.ytd-guide-entry-renderer + [icon="che
     margin-right: 15px !important;
     color:#878787 !important;
 }
+.ytd-guide-entry-renderer:hover {
+	background: #444444;
+}
+ytd-guide-entry-renderer[active] .ytd-guide-entry-renderer:hover {
+	background: #ff0000 !important;
+}
+
+#header-entry .ytd-guide-entry-renderer:hover {
+	background: none !important;
+}
+
+.ytd-guide-entry-renderer:hover > .title {
+	color: #ffffff !important;
+}
+.ytd-guide-entry-renderer:hover > .guide-icon.ytd-guide-entry-renderer {
+	color: #ffffff !important;
+}
 yt-img-shadow.ytd-guide-entry-renderer {
     margin-right: 15px !important;
 }
