@@ -133,6 +133,9 @@ ytd-guide-entry-renderer[is-header] .title.ytd-guide-entry-renderer + [icon="che
     margin-right: 15px !important;
     color:#878787 !important;
 }
+ytd-guide-entry-renderer {
+	width: 100% !important;
+}
 .ytd-guide-entry-renderer:hover {
 	background: #444444;
 }
@@ -150,6 +153,10 @@ ytd-guide-entry-renderer[active] .ytd-guide-entry-renderer:hover {
 .ytd-guide-entry-renderer:hover > .guide-icon.ytd-guide-entry-renderer {
 	color: #ffffff !important;
 }
+#endpoint[href="/playlist?list=WL"]:hover yt-icon:first-of-type, #endpoint[href="/playlist?list=LL"]:hover yt-icon:first-of-type {
+  filter: invert(1) brightness(100) !important;
+}
+
 yt-img-shadow.ytd-guide-entry-renderer {
     margin-right: 15px !important;
 }
