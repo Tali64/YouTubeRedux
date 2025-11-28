@@ -268,7 +268,9 @@ ytd-button-renderer.ytd-feed-filter-chip-bar-renderer,
 .watch-skeleton #secondary-info #top-row #video-owner #channel-icon,
 .watch-skeleton #secondary-info #top-row #subscribe-button,
 .ytp-delhi-modern .ytp-tooltip.ytp-text-detail.ytp-preview,
-.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child,
+.ytwTopBannerImageTextIconButtonedLayoutViewModelHost,
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
     border-radius: 0 !important;
 }
 #ghost-comment-section.ytd-continuation-item-renderer {
