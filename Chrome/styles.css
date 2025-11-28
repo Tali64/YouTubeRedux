@@ -264,7 +264,9 @@ ytd-button-renderer.ytd-feed-filter-chip-bar-renderer,
 .watch-skeleton #secondary-info #top-row #video-owner #channel-icon,
 .watch-skeleton #secondary-info #top-row #subscribe-button,
 .ytp-delhi-modern .ytp-tooltip.ytp-text-detail.ytp-preview,
-.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child,
+.ytwTopBannerImageTextIconButtonedLayoutViewModelHost,
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
     border-radius: 0 !important;
 }
 #ghost-comment-section.ytd-continuation-item-renderer {
@@ -608,7 +610,6 @@ ytd-video-primary-info-renderer > [button-renderer] yt-icon {
 ytd-watch-metadata #above-the-fold #owner {
     max-width: none !important;
 }
-
 /*PLAYLIST STYLES*/
 #text.ytd-alert-with-button-renderer {
     color:#0066ff !important;
