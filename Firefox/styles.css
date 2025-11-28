@@ -270,7 +270,9 @@ ytd-button-renderer.ytd-feed-filter-chip-bar-renderer,
 .ytp-delhi-modern .ytp-tooltip.ytp-text-detail.ytp-preview,
 .ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child,
 .ytwTopBannerImageTextIconButtonedLayoutViewModelHost,
-.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
+.shortsLockupViewModelHostThumbnailParentContainerRounded,
+.yt-badge-shape--thumbnail-badge {
     border-radius: 0 !important;
 }
 #ghost-comment-section.ytd-continuation-item-renderer {
@@ -794,6 +796,12 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {
 }
 .ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
 	background: #ff0000;
+}
+.yt-badge-shape--thumbnail-default {
+    background: #000000 !important;
+    font-size: 11px !important;
+    opacity: 0.75 !important;
+    padding: 0 4px !important;
 }
 
 /*ADDITIONAL*/
