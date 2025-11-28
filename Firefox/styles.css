@@ -758,7 +758,6 @@ yt-img-shadow.ytd-mini-channel-renderer {
     background-color: var(--redux-spec-badge-chip-background-hover);
 }
 #contentContainer.tp-yt-app-header {
-	max-width: 1070px !important;
 	margin: auto;
 }
 #page-header-banner {
@@ -800,6 +799,7 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {
 .yt-badge-shape--thumbnail-default {
     background: #000000 !important;
     font-size: 11px !important;
+    line-height: 14px !important;
     opacity: 0.75 !important;
     padding: 0 4px !important;
 }
