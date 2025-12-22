@@ -264,7 +264,11 @@ ytd-button-renderer.ytd-feed-filter-chip-bar-renderer,
 .watch-skeleton #secondary-info #top-row #video-owner #channel-icon,
 .watch-skeleton #secondary-info #top-row #subscribe-button,
 .ytp-delhi-modern .ytp-tooltip.ytp-text-detail.ytp-preview,
-.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child,
+.ytwTopBannerImageTextIconButtonedLayoutViewModelHost,
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
+.shortsLockupViewModelHostThumbnailParentContainerRounded,
+.yt-badge-shape--thumbnail-badge {
     border-radius: 0 !important;
 }
 #ghost-comment-section.ytd-continuation-item-renderer {
@@ -469,11 +473,6 @@ html:not([dark]) #author-text {
 html:not([dark]) ytd-author-comment-badge-renderer {
     --ytd-author-comment-badge-name-color: #128ee9 !important;
 }
-html:not([dark]) .more-button.ytd-comment-replies-renderer, 
-html:not([dark]) .less-button.ytd-comment-replies-renderer,
-html:not([dark]) ytd-comment-replies-renderer #expander button {
-    color: #2793e6 !important;
-}
 span.yt-view-count-renderer, span.ytd-video-view-count-renderer {
     font-size:18px !important;
 }
@@ -608,7 +607,6 @@ ytd-video-primary-info-renderer > [button-renderer] yt-icon {
 ytd-watch-metadata #above-the-fold #owner {
     max-width: none !important;
 }
-
 /*PLAYLIST STYLES*/
 #text.ytd-alert-with-button-renderer {
     color:#0066ff !important;
@@ -750,7 +748,6 @@ yt-img-shadow.ytd-mini-channel-renderer {
     background-color: var(--redux-spec-badge-chip-background-hover);
 }
 #contentContainer.tp-yt-app-header {
-	max-width: 1070px !important;
 	margin: auto;
 }
 #page-header-banner {
@@ -789,6 +786,16 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {
 .ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
 	background: #ff0000;
 }
+.yt-badge-shape--thumbnail-default {
+    background: #000000 !important;
+    font-size: 11px !important;
+    line-height: 14px !important;
+    opacity: 0.75 !important;
+    padding: 0 4px !important;
+}
+.yt-lockup-metadata-view-model__metadata {
+    color: #767676 !important;
+}
 
 /*ADDITIONAL*/
 [page-subtype="home"] #contents > ytd-rich-grid-row,
@@ -823,4 +830,19 @@ ytd-multi-page-menu-renderer {
 #ticket-shelf,
 #primary-inner #expandable-metadata {
     background-color: var(--redux-spec-base-background) !important;
+}
+
+/* COMMENT STYLES */
+html:not([dark]) .more-button.ytd-comment-replies-renderer, 
+html:not([dark]) .less-button.ytd-comment-replies-renderer,
+html:not([dark]) ytd-comment-replies-renderer #expander button,
+html:not([dark]) #more-replies-sub-thread .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
+html:not([dark]) #less-replies-sub-thread .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text {
+    color: #2793e6 !important;
+}
+.threadline {
+    display: none !important;
+}
+.ytSubThreadThreadline {
+    opacity: 0 !important;
 }

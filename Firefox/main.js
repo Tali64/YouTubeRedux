@@ -925,6 +925,14 @@ function adjustAmbient() {
 }
 
 function main() {
+    // Thanks to arnavbhate for this code - https://github.com/omnidevZero/YouTubeRedux/issues/324#issuecomment-3569626163
+    let url = new URL(window.location.href);
+    if (url.toString().indexOf('start_radio') !== -1) {
+        url.searchParams.delete('start_radio');
+        url.searchParams.delete('list');
+        location.replace(url);
+    }
+
 	if (reduxSettings.autoConfirm) {
 		if (confirmInterval == undefined) {
 			confirmInterval = setInterval(confirmIt, 500);
